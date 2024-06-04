@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NewsServiceable {
+public protocol NewsServiceable {
     func fetchNewsSources(with categoryName: String, completionHandler: @escaping ([NewsSource]) -> Void)
     func fetchNews(source: String, completionHandler: @escaping ([NewsArticle]) -> Void)
     func fetchAllNews(keyword: String, completionHandler: @escaping ([NewsArticle]) -> Void)
